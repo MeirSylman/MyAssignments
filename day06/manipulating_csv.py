@@ -1,5 +1,4 @@
 import pandas as pd
-import sys
 import pytest
 
 def compute_stat(path, filename='expression_data.csv'):
@@ -21,7 +20,7 @@ def compute_stat(path, filename='expression_data.csv'):
     print(f"\nMean of the gene means: {mean}")
     return variance, mean
 
-path = sys.argv[1]
+path = r'https://github.com/MeirSylman/MyAssignments/blob/main/day06/expression_data.csv'
 process= compute_stat(path)
 
 
