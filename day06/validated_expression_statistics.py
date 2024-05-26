@@ -1,3 +1,14 @@
-variance_of_the_genes_means=3.5688415084138224e-06
+import pytest
+from for_csv import compute_stat
 
-mean_of_the_genes_means=0.01
+
+def test_compute(result_variance, result_mean):
+    expected_variance = 3.5688415084138224e-06
+    expected_mean = 0.01
+
+    observd_variance = result_variance
+    observd_mean = result_mean
+
+    assert observd_variance == expected_variance
+    assert observd_mean == expected_mean
+
