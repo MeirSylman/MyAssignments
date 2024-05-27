@@ -1,9 +1,8 @@
 import pandas as pd
 import pytest
 
-def compute_stat(path, filename='expression_data.csv'):
-    file_path = f"{path}/{filename}"
-    df = pd.read_csv(file_path)
+def compute_stat(path):
+    df = pd.read_csv(path)
 
     # normalization:
     for column in df.columns:
@@ -20,7 +19,6 @@ def compute_stat(path, filename='expression_data.csv'):
     print(f"\nMean of the gene means: {mean}")
     return variance, mean
 
-path = r'https://github.com/MeirSylman/MyAssignments/blob/main/day06/expression_data.csv'
+path = "expression_data.csv
 process= compute_stat(path)
-
 
