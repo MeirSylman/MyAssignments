@@ -19,6 +19,6 @@ def compute_stat(path):
     print(f"\nMean of the gene means: {mean}")
     return variance, mean
 
-path = "expression_data.csv
+path = "expression_data.csv"
 process= compute_stat(path)
 
