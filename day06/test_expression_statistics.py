@@ -1,5 +1,5 @@
 import pytest
-from manipulating_csv.py import compute_stat
+from manipulating_csv import compute_stat
 
 
 def test_compute(result_variance, result_mean):
