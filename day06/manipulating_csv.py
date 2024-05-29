@@ -3,11 +3,13 @@ import pytest
 
 def compute_stat(path):
     df = pd.read_csv(path)
-
+    df.set_index('Unnamed: 0', inplace=True)
     # normalization:
     for column in df.columns:
-        sum_column = df[column].sum()
-        df[column] = df[column] / sum_column
+        print(column)
+        if type(df[column]) != str:
+            sum_column = df[column].sum()
+            df[column] = df[column] / sum_column
 
     print('Data normalized.\n Calculating genes means statistics.')
 
@@ -21,4 +23,3 @@ def compute_stat(path):
 
 path = "expression_data.csv"
 process= compute_stat(path)
-
