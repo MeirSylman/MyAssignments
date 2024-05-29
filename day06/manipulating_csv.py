@@ -1,5 +1,4 @@
 import pandas as pd
-import pytest
 
 def compute_stat(path):
     df = pd.read_csv(path)
