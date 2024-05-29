@@ -6,7 +6,6 @@ def compute_stat(path):
     df.set_index('Unnamed: 0', inplace=True)
     # normalization:
     for column in df.columns:
-        print(column)
         if type(df[column]) != str:
             sum_column = df[column].sum()
             df[column] = df[column] / sum_column
