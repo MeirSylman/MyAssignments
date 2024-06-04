@@ -1,0 +1,26 @@
+# NCBI Data Downloader
+
+## Usage
+
+This tool allows you to search for a term in the NCBI databases and download a specified number of items. Each downloaded item is saved in its own file, and metadata about the search is recorded in a CSV file.
+
+### How to Run the Script
+
+1. **Open your terminal.**
+2. **Navigate to the directory containing the `ncbi.py` script.**
+
+3. **Run the script with the following command:**
+
+    ```bash
+    python ncbi.py "SEARCH_TERM" NUMBER
+    ```
+
+    - `SEARCH_TERM`: The term you want to search for in the NCBI database. Enclose the search term in quotes if it contains spaces.
+    - `NUMBER`: The maximum number of items you want to download.
+
+### Example Usage
+
+To search for "Escherichia coli" and download 5 items, use the following command:
+
+```bash
+python ncbi.py Escherichia 5
