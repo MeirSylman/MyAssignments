@@ -6,10 +6,8 @@ This tool allows you to search for a term in the NCBI databases and download a s
 
 ### How to Run the Script
 
-1. **Open your terminal.**
-2. **Navigate to the directory containing the `ncbi.py` script.**
 
-3. **Run the script with the following command:**
+**Run the script with the following command:**
 
     ```bash
     python ncbi.py "SEARCH_TERM" NUMBER
