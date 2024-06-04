@@ -32,7 +32,7 @@ def save_records_to_files(records, term, requested_number, total_found):
             file.write(record)
         file_names.append(file_name)
 
-    metadata_file = "downloads/metadata.csv"
+    metadata_file = "metadata.csv"
     with open(metadata_file, 'a', newline='') as csvfile:
         fieldnames = ['Date', 'Search Term', 'Max Number Requested', 'Total Found']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
