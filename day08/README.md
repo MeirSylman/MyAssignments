@@ -12,9 +12,9 @@ A fun and interactive number guessing game created with Python's Tkinter library
 
    - Or use the exist file by:
     
-    ```bash
-    pip install -r requirements.txt
-    ```
+     ```bash
+     pip install -r requirements.txt
+     ```
 
 2. **Run the Script**:
    - Open a terminal or command prompt.
