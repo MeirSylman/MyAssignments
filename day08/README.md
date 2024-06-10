@@ -10,7 +10,7 @@ A fun and interactive number guessing game created with Python's Tkinter library
      pip install tk
      ```
 
-     Or use the exist file by:
+   - Or use the exist file by:
     
     ```bash
     pip install -r requirements.txt
@@ -21,7 +21,7 @@ A fun and interactive number guessing game created with Python's Tkinter library
    - Navigate to the directory where you saved the script.
    - Run the script using:
      ```bash
-     python number_guessing_game.py
+     python GUI_for_number_guessing_game.py
      ```
 
 ## Game Instructions
