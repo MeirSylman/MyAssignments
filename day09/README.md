@@ -13,3 +13,8 @@ To run the script, use the following command format in your terminal or command 
 
 ```bash
 python analyze.py FILE [--duplicate] [--cORFs]
+
+### Arguments
+FILE: Path to the input file in Fasta or GeneBank format.
+--duplicate: Option to find the longest repeating sub-sequence in the sequence.
+--cORFs: Option to count Open Reading Frames (ORFs) in the sequence.
