@@ -1,6 +1,6 @@
 # Sequence Analysis Tool
 
-This tool allows you to analyze DNA sequences to find the longest repeating sub-sequence and count the number of Open Reading Frames (ORFs). The script can process input files in Fasta or GeneBank format.
+This tool allows you to analyze DNA sequences to find the longest sub-sequence that apears twice, and count the number of Open Reading Frames (ORFs). The script can process input files in Fasta or GeneBank format.
 
 ## Features
 
