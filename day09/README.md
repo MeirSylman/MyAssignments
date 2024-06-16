@@ -21,7 +21,7 @@ FILE: Path to the input file in Fasta or GeneBank format.
 --cORFs: Option to count Open Reading Frames (ORFs) in the sequence.
 
 
-What are Open Reading Frames (ORFs)?
+## What are Open Reading Frames (ORFs)?
 Open Reading Frames (ORFs) are continuous stretches of codons that begin with a start codon (usually "ATG") and end with a stop codon (either "TAA", "TAG", or "TGA"). These sequences are important in the study of genes and protein synthesis because they potentially encode proteins.
 
 
