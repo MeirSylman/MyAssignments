@@ -11,9 +11,17 @@ def find_longest_repeating_subsequence(sequence):
     return longest_subsequence
 
 def count_orfs(sequence):
-    orf_pattern = re.compile(r'ATG(?:\w{3})*?TAA|ATG(?:\w{3})*?TAG|ATG(?:\w{3})*?TGA')
+    orf_pattern = re.compile(r'ATG(?:\w{3})*?(?:TAA|TAG|TGA)')
     orfs = orf_pattern.findall(sequence)
     return len(orfs)
+
+def read_sequence_from_file(file_path):
+    sequence = ""
+    with open(file_path, "r") as file:
+        for line in file:
+            if not line.startswith(">") and not line.startswith("LOCUS") and not line.startswith("DEFINITION"):
+                sequence += line.strip()
+    return sequence
 
 def main():
     parser = argparse.ArgumentParser(description="Find the longest repeating sub-sequence and count Open Reading Frames (ORFs) in a sequence.")
@@ -23,8 +31,7 @@ def main():
     args = parser.parse_args()
 
     # Read the sequence from the input file
-    with open(args.file, "r") as file:
-        sequence = file.read()
+    sequence = read_sequence_from_file(args.file)
 
     # Perform the requested analysis
     if args.duplicate:
