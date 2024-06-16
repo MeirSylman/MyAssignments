@@ -13,7 +13,7 @@ To run the script, use the following command format in your terminal or command 
 
 ```bash
 python analyze.py FILE [--duplicate] [--cORFs]
-bash```
+```bash
 
 ### Arguments
 FILE: Path to the input file in Fasta or GeneBank format.
